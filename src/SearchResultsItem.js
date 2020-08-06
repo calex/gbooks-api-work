@@ -1,0 +1,26 @@
+import React from 'react';
+import './App.css';
+
+function SearchResultsItem(props) {
+    return (
+        <li className="search-results-item">
+            <div className="book__cover-and-price">
+                <div className="book__cover">
+                    <img src={props.coverImgUri} alt={props.title} />
+                </div>
+                <div className="book__price">
+                    <p>{props.price}</p>
+                </div>
+            </div>
+            <div className="book__info">
+                <hgroup>
+                    <h3>{props.title}</h3>
+                    <p>{props.author}</p>
+                </hgroup>
+                <p>{props.description}</p>
+            </div>
+        </li>
+    );
+}
+
+export default SearchResultsItem;
