@@ -72,3 +72,13 @@ label {
 .book__cover-and-price {
   margin-right: 2em;
 }
+
+.no-results-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%; 
+  text-align: center; 
+}

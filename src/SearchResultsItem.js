@@ -8,14 +8,11 @@ function SearchResultsItem(props) {
                 <div className="book__cover">
                     <img src={props.coverImgUri} alt={props.title} />
                 </div>
-                <div className="book__price">
-                    <p>{props.price}</p>
-                </div>
             </div>
             <div className="book__info">
                 <hgroup>
                     <h3>{props.title}</h3>
-                    <p>{props.author}</p>
+                    <p><b>Author(s):</b> {props.author}</p>
                 </hgroup>
                 <p>{props.description}</p>
             </div>
